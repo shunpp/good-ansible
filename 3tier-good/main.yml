@@ -2,12 +2,6 @@
 - name: Import In-memory inventory play
   import_playbook: in-memory-inventory.yml
 
-- hosts: workstation
-  gather_facts: true
-  roles:
-    - osp-facts
-# Setup front-end load balancer tier
-
 
 - name: setup load-balancer tier
   hosts: frontends
